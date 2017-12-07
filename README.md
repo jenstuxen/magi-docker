@@ -15,7 +15,6 @@ https://hub.docker.com/r/jenstuxen/magi-docker/tags/
 OBS set to mine on my account, replace `-u leaRINSIScH.magi -p password` with your own
 ## Latest amd64 alpine
 ```bash
-#
 docker run --rm -it jenstuxen/magi-docker:latest m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
 ```
 ## Latest rpi2 (interactive)
