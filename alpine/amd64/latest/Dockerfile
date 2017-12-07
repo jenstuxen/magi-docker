@@ -7,6 +7,6 @@ RUN apk add --no-cache --update git build-base autoconf automake pkgconfig curl-
  && ./configure CFLAGS="-O3" CXXFLAGS="-O3" \
  && make \
  && make install \
- && apk del git build-base autoconf automake pkgconfig curl-dev gmp-dev \
+ && apk del git build-base autoconf automake pkgconfig \
  && rm -rf /var/cache/apk/* \
  && rm -rf /m-cpuminer-v2
