@@ -12,18 +12,19 @@ https://hub.docker.com/r/jenstuxen/magi-docker/tags/
 
 
 # Examples
+OBS set to mine on my account, replace `-u leaRINSIScH.magi -p password` with your own
 ## Latest amd64 alpine
 ```bash
-#OBS this will go to my account
+#
 docker run --rm -it jenstuxen/magi-docker:latest m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
 ```
 ## Latest rpi2 (interactive)
 ```bash
-docker run --rm -it jenstuxen/magi-docker:rpi2 m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u USERNAME.WORKERNAME -p password
+docker run --rm -it jenstuxen/magi-docker:rpi2 m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
 ```
 ## Latest orangepizero (background)
 ```bash
-docker run --rm -d jenstuxen/magi-docker:orangepizero m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u USERNAME.WORKERNAME -p password
+docker run --rm -d jenstuxen/magi-docker:orangepizero m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
 ```
 
 
