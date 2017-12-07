@@ -1,5 +1,5 @@
 FROM resin/raspberrypi2-alpine-python:latest
-RUN apk add --no-cache git
+RUN apk add --no-cache --update git build-base autoconf automake pkgconfig curl-dev gmp-dev
 RUN git clone https://github.com/magi-project/m-cpuminer-v2.git
 WORKDIR /m-cpuminer-v2
 RUN sed -i 's/-march=native/-mcpu=cortex-a7 -mfpu=neon-vfpv4/' Makefile.am
