@@ -1,4 +1,4 @@
-FROM resin/raspberrypi3-alpine-python:latest
+FROM resin/raspberrypi3-alpine:latest
 RUN apk add --no-cache --update git build-base autoconf automake pkgconfig curl-dev gmp-dev
 RUN git clone https://github.com/magi-project/m-cpuminer-v2.git
 WORKDIR /m-cpuminer-v2
