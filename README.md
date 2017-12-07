@@ -7,6 +7,10 @@ Raspberry pi images based on resin images https://resin.io/.
 
 Idea from https://www.novaspirit.com/2017/10/19/crypto-mining-sbc/
 
+# Tags
+https://hub.docker.com/r/jenstuxen/magi-docker/tags/
+
+
 # Examples
 ## Latest amd64 alpine
 ```bash
@@ -20,4 +24,13 @@ docker run --rm -it jenstuxen/magi-docker:rpi2 m-minerd -o stratum+tcp://xmg.sup
 ## Latest orangepizero (background)
 ```bash
 docker run --rm -d jenstuxen/magi-docker:orangepizero m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u USERNAME.WORKERNAME -p password
+```
+
+
+# Build
+```bash
+cd magi-docker
+cd rpi/2/ #or your specific device
+docker build -t local/magi-docker:rpi2 .
+docker run -it local/magi-docker:rpi2 m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
 ```
