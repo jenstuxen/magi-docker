@@ -9,13 +9,13 @@ Idea from https://www.novaspirit.com/2017/10/19/crypto-mining-sbc/.
 
 # Examples
 OBS set to mine on my account, replace `-u leaRINSIScH.magi -p password` with your own
-## Latest by architecture
+## Latest by auto detected architecture
 ```bash
 docker run -d jenstuxen/magi-docker m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
 ```
 ## specify arhitecture/device/os (see tags)
 ```bash
-docker run -d jenstuxen/magi-docker:rpi2 m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
+docker run -d jenstuxen/magi-docker:alpine-armhf-rpi2 m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
 ```
 
 # Tags
