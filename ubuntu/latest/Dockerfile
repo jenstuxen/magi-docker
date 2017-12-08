@@ -3,6 +3,7 @@ RUN apt-get update -y \
     && apt-get install -y build-essential libcurl4-openssl-dev git autotools-dev automake libgmp-dev \
     && git clone https://github.com/magi-project/m-cpuminer-v2.git \
     && cd m-cpuminer-v2/ \
+    && sed -i 's/-march=native/-march=core2/' Makefile.am \ 
     && ./autogen.sh \
     && ./configure CFLAGS="-O3" CXXFLAGS="-O3" \
     && make \
