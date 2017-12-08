@@ -13,4 +13,4 @@ RUN apk add --no-cache --update git build-base autoconf automake pkgconfig curl-
  && apk del git build-base autoconf automake pkgconfig \
  && rm -rf /var/cache/apk/* \
  && rm -rf /m-cpuminer-v2
- RUN [ "cross-build-end" ]  
+RUN [ "cross-build-end" ]  
