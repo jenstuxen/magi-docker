@@ -5,27 +5,21 @@ It builds from git repository https://github.com/magi-project/m-cpuminer-v2.
 
 Raspberry pi images based on resin images https://resin.io/.
 
-Idea from https://www.novaspirit.com/2017/10/19/crypto-mining-sbc/
-
-# Tags
-https://hub.docker.com/r/jenstuxen/magi-docker/tags/
-
+Idea from https://www.novaspirit.com/2017/10/19/crypto-mining-sbc/.
 
 # Examples
 OBS set to mine on my account, replace `-u leaRINSIScH.magi -p password` with your own
-## Latest amd64 alpine
+## Latest by architecture
 ```bash
-docker run --rm -it jenstuxen/magi-docker:latest m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
+docker run -d jenstuxen/magi-docker m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
 ```
-## Latest rpi2 (interactive)
+## specify arhitecture/device/os (see tags)
 ```bash
-docker run --rm -it jenstuxen/magi-docker:rpi2 m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
-```
-## Latest orangepizero (background)
-```bash
-docker run --rm -d jenstuxen/magi-docker:orangepizero m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
+docker run -d jenstuxen/magi-docker:rpi2 m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
 ```
 
+# Tags
+https://hub.docker.com/r/jenstuxen/magi-docker/tags/
 
 # Build
 ```bash
