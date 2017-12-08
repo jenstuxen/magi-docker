@@ -3,7 +3,7 @@ RUN apk add --no-cache --update git build-base autoconf automake pkgconfig curl-
  && rm -rf /var/cache/apk/* \
  && git clone https://github.com/magi-project/m-cpuminer-v2.git \
  && cd /m-cpuminer-v2 \
- && sed -i 's/-march=native/-mcpu=cortex-a53 -mfpu=neon-vfpv4/' Makefile.am \
+ && sed -i 's/-march=native/-mcpu=cortex-a53 -mfpu=neon-fp-armv8/' Makefile.am \
  && ./autogen.sh \
  && ./configure CFLAGS="-O3" CXXFLAGS="-O3" \
  && make -j4 \
