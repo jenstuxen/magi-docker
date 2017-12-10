@@ -15,7 +15,7 @@ docker run -d jenstuxen/magi-docker m-minerd -o stratum+tcp://xmg.suprnova.cc:71
 ```
 ## specify arhitecture/device/os (see tags)
 ```bash
-docker run -d jenstuxen/magi-docker:alpine-armhf-rpi2 m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
+docker run -d jenstuxen/magi-docker:armhf-alpine-rpi2 m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
 ```
 
 # Tags
