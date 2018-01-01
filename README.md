@@ -8,7 +8,7 @@ Raspberry pi images based on resin images https://resin.io/.
 Idea from https://www.novaspirit.com/2017/10/19/crypto-mining-sbc/.
 
 # Examples
-OBS set to mine on my account, replace `-u leaRINSIScH.magi -p password` with your own
+OBS set to mine on my account, replace `-u fxyn4w6u34gy535gh.user -p password` with your own
 ## Latest by auto detected architecture
 * benchmark
 ```bash
