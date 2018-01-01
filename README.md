@@ -10,12 +10,17 @@ Idea from https://www.novaspirit.com/2017/10/19/crypto-mining-sbc/.
 # Examples
 OBS set to mine on my account, replace `-u leaRINSIScH.magi -p password` with your own
 ## Latest by auto detected architecture
+* benchmark
 ```bash
-docker run -d jenstuxen/magi-docker m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
+docker run --rm -it jenstuxen/magi-docker m-minerd --benchmark
+```
+* example
+```bash
+docker run -d jenstuxen/magi-docker m-minerd -o stratum+tcp://96.43.139.10:3333 -u fxyn4w6u34gy535gh.user -p password
 ```
 ## specify arhitecture/device/os (see tags)
 ```bash
-docker run -d jenstuxen/magi-docker:armhf-alpine-rpi2 m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
+docker run -d jenstuxen/magi-docker:alpine-armhf-rpi2 m-minerd -o stratum+tcp://96.43.139.10:3333 -u fxyn4w6u34gy535gh.user -p password
 ```
 
 # Tags
@@ -26,5 +31,5 @@ https://hub.docker.com/r/jenstuxen/magi-docker/tags/
 cd magi-docker
 cd rpi/2/ #or your specific device
 docker build -t local/magi-docker:rpi2 .
-docker run -it local/magi-docker:rpi2 m-minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u leaRINSIScH.magi -p password
+docker run -it local/magi-docker:rpi2 m-minerd --benchmark
 ```
