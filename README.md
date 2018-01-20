@@ -8,7 +8,7 @@ Raspberry pi images based on resin images https://resin.io/.
 Idea from https://www.novaspirit.com/2017/10/19/crypto-mining-sbc/.
 
 # Examples
-OBS set to mine on my account, replace `-u fxyn4w6u34gy535gh.user -p password` with your own
+replace `-o stratum+tcp://ip:port -u user.worker -p password` with your own
 ## Latest by auto detected architecture
 * benchmark
 ```bash
@@ -16,11 +16,11 @@ docker run --rm -it jenstuxen/magi-docker m-minerd --benchmark
 ```
 * example
 ```bash
-docker run -d jenstuxen/magi-docker m-minerd -o stratum+tcp://96.43.139.10:3333 -u fxyn4w6u34gy535gh.user -p password
+docker run -d jenstuxen/magi-docker m-minerd -o stratum+tcp://ip:port -u user.worker -p password
 ```
 ## specify arhitecture/device/os (see tags)
 ```bash
-docker run -d jenstuxen/magi-docker:alpine-armhf-rpi2 m-minerd -o stratum+tcp://96.43.139.10:3333 -u fxyn4w6u34gy535gh.user -p password
+docker run -d jenstuxen/magi-docker:alpine-armhf-rpi2 m-minerd -o stratum+tcp://ip:port -u user.worker -p password
 ```
 
 # Tags
